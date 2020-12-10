@@ -182,19 +182,21 @@ vote.play();
 }
 if(seconds == 25)
 {
-reverb.process(cough, 1);
-reverb.process(chant, 1);
-reverb.process(burn, 1);
-reverb.process(vote, 1);
 
 cough.disconnect();
 chant.disconnect();
 burn.disconnect();
 vote.disconnect();
 
+reverb.process(cough, 1);
+reverb.process(chant, 1);
+reverb.process(burn, 1);
+reverb.process(vote, 1);
+
 }
-if(seconds == 30)
+if(seconds == 45)
 phase = 3;
+
 var vol = mic.getLevel();
 //console.log("mic level " + mic.getLevel());
 
